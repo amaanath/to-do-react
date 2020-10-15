@@ -1,3 +1,126 @@
+/* Todo Login Title font */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 .app {
+  display: flex;
+  justify-content: center;
+
+  height: 110vh;
+  background-image: url(./todoLoginBg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: 500px;
+  width: 490px;
+  margin-top: 100px;
+}
+
+.login h1 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+  margin: 0;
+}
+
+.login h3 {
+  color: #fff;
+}
+
+#loginForm {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 390px;
+  width: 380px;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginForm > input:first-of-type {
+  margin-bottom: 30px;
+}
+
+#loginForm > input {
+  height: 5vh;
+  width: 24vw;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.login > button {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.app__home {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 50px;
   text-align: center;
+  min-height: 110vh;
+  background-image: url(./todoHomeBg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app__home h1 {
+  font-family: "Source Code Pro", monospace;
+}
+
+.app__home input {
+  height: 4vh;
+  width: 15vw;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.app__home button {
+  margin-left: 20px;
+}
+
+.app__homeTodos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+/* todo css */
+
+.todo__container {
+  height: 7vh;
+}
+
+.todo__container:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo h2 {
+  color: #fff;
+  text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+}
+
+.todo button {
+  height: 5vh;
 }
